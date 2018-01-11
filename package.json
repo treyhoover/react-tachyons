@@ -1,0 +1,37 @@
+{
+  "name": "reactyons",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/reactyons",
+  "module": "build/reactyons",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c",
+    "watch": "rollup -cw"
+  },
+  "author": "",
+  "devDependencies": {
+    "rollup": "^0.50.0",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-peer-deps-external": "^1.0.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^4.3.1",
+    "tslib": "^1.6.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.10",
+    "@types/react-dom": "^16.0.1",
+    "classnames": "^2.2.5",
+    "rollup-plugin-local-resolve": "^1.0.7"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
